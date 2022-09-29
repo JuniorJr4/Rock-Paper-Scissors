@@ -1,7 +1,6 @@
-//Initialize choice of weapons
 const weapons = ['Rock', 'Paper', 'Scissors']
 
-//Create function to play single round
+
 function playRound(playerChoice, computerChoice) {
     if (playerChoice === 'rock' && computerChoice === 'Scissors') {
         playerScore++;
@@ -30,34 +29,30 @@ function playRound(playerChoice, computerChoice) {
     }
 }
 
-//Create random computer choice
 function getComputerChoice() {
     return weapons[Math.floor(Math.random() * 3)];
 }
 
-//Player and computer scores
 let computerScore = 0;
 let playerScore = 0;
 
-//Create game function
 function game() {
     //game loop for 5 rounds of play
     for (let i = 0; i < 5; i++) {
 
-        //Assign Compter Choice
+        
         let computerChoice = getComputerChoice();
         console.log(computerChoice); //Test log
 
-        //Player move prompt
+        
         let playerChoice = prompt("Rock, Paper or Scissors?");
         playerChoice.toLowerCase();
         console.log(playerChoice);
 
-        //Intialize round
+        
         console.log(playRound(playerChoice, computerChoice));
     }
 
-    //display score and who won
     if (playerScore > computerScore) {
         console.log(`You won by a score of ${playerScore} to ${computerScore}!`);
     } else if (playerScore == computerScore) {
