@@ -5,23 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="https://kit.fontawesome.com/614d2f61fa.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
 <body>
+    <div class="all">
+        <h1 class="header">Are You Ready to Play Rock, Paper, Scissors?</h1>
+        <div class="actionContainer">
+            <div class="action">
+                <div class="player" id="player">
+                    <i id="playerIcon"></i>
+                </div>
+                <div class="computer" id="computer">
+                    <i id="computerIcon"></i>
+                </div>
+            </div>
+            <div class="whoContainer">
+                <h3 class="who">You</h3>
+                <h3 class="who">Computer</h3>
+            </div>
+        </div>
+        <div class="btns">
+            <button class="btnRock">Rock</button>
+            <button class="btnPaper">Paper</button>
+            <button class="btnScissors">Scissors</button>
+        </div>
 
-    <h1 class="header">Are You Ready to Play Rock, Paper, Scissors?</h1>
-    <div class="btns">
-        <button class="btnRock">Rock</button>
-        <button class="btnPaper">Paper</button>
-        <button class="btnScissors">Scissors</button>
-    </div>
-
-    <div class="scores">
-        <h3 class="showPlayerScore">Your score is: <span id="pScore">0</span></h3>
-        <h3 class="showComputerScore">The computer's score is: <span id="cScore">0</span></h3>
-        <h3 id="showOutcome"></h3>
-        <h3 id="finalOutcome"></h3>
+        <div class="scores">
+            <h3 class="showPlayerScore">Your score is: <span id="pScore">0</span></h3>
+            <h3 class="showComputerScore">The computer's score is: <span id="cScore">0</span></h3>
+            <h3 id="showOutcome"></h3>
+            <h3 id="finalOutcome"></h3>
+        </div>
     </div>
     <script src="script.js"></script>
 
