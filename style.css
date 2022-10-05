@@ -1,0 +1,66 @@
+* {
+    outline: 1px dotted red;
+    font-family: 'Roboto';
+}
+
+body {
+    background-color: rgb(143, 143, 143);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border-radius: 5px;
+    background-color: lightgray;
+    padding: 10px;
+    width: 75px;
+}
+
+.btns {
+    display: flex;
+}
+
+.scores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.action {
+    height: 100px;
+    display: flex;
+    gap: 100px;
+}
+
+.whoContainer {
+    display: flex;
+    gap: 180px;
+    padding-top: 50px;
+    justify-content: center;
+}
+
+i {
+    padding-bottom: 50px;
+}
+
+.actionContainer {
+    height: 200px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fa-10px {
+    padding: 50px;
+}
