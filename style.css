@@ -1,5 +1,5 @@
 * {
-    outline: 1px dotted red;
+    
     font-family: 'Roboto';
 }
 
@@ -17,6 +17,7 @@ button {
     background-color: lightgray;
     padding: 10px;
     width: 75px;
+    font-weight: bold;
 }
 
 .btns {
@@ -63,4 +64,18 @@ i {
 
 .fa-10px {
     padding: 50px;
+}
+
+#comp {
+    position: relative;
+    left: 20px;
+}
+
+.scores > h3 {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.playAgainBtn {
+    width: 100px;
 }
